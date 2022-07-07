@@ -20,7 +20,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: sticky
+    position: sticky;
+    margin-top: -40px;
    
 }
 .logo{
@@ -30,7 +31,8 @@ body{
 .menu li{
     list-style: none;
     display: inline-block;
-    margin:19px;
+    margin-left: 40px;
+    margin-top: 23px;
     
     
 }
@@ -69,7 +71,9 @@ body{
 
 .freequote{
     background-color: red;
-    padding: 40px;
+    padding: 46px;
+    text-decoration: none;
+    color: white;
 }
 
 section{
@@ -119,7 +123,7 @@ section{
 .hero-caption button{
     background: red;
     font-family: "Chivo",sans-serif;
-    padding: 32px 58px;
+    padding: 23px 56px;
     color: white !important;
     display: inline-block;
     font-size: 18px!important;
@@ -427,6 +431,7 @@ section{
     margin-left: 0;
     padding-right: 11%;
     padding-left: 11%;
+    padding-top: 45px;
     display: flex;
 }
 
@@ -434,14 +439,20 @@ section{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
 
+}
+
+.gallery-col1{
+   
+    flex: 0 0 auto;
+    width: 25%;
+    margin-left: 8.3333333333%;
 }
 .gallery-col{
    
     flex: 0 0 auto;
     width: 25%;
-    margin-left: 8.3333333333%;
+    /* margin-left: 8.3333333333%; */
 }
 
 .card{
@@ -617,7 +628,7 @@ title.row{
 }
 
 .review-img img{
-    padding: 8px 0;
+    padding: 14px 0;
 }
 
 .review-img p{
