@@ -1,0 +1,776 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 16px;
+    font-family:"Open sans",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS for header */
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky
+   
+}
+.logo{
+    padding: 50px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin:19px;
+    
+    
+}
+
+.menu li a{
+    color:white;
+    text-decoration: none;
+    font-size:16px ;
+
+}
+.menu li a:hover{
+    color: red;
+}
+
+ li:nth-child(7) a:hover{
+    color: white !important;
+}
+
+
+
+.Blogmenu{
+    display: inline-block;
+    position: relative;
+}
+
+.blogsubmenu{
+    display: none; 
+    background-color: black;
+    color: white;
+    min-width: 180px;
+    position: absolute;
+}
+.Blogmenu:hover .blogsubmenu{
+    display: block;
+}
+
+.freequote{
+    background-color: red;
+    padding: 40px;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CSS for HOME section */
+
+#Home{
+    background-color: black;
+    display: flex;
+}
+
+.hero-caption{
+    color: white;
+    width: 610px;
+    padding-left: 150px;
+    padding-right: 80px;
+    padding-top: 100px;
+
+}
+
+.hero-caption h1{
+    line-height: 1.1;
+    font-weight: 800;
+    font-size: 47px;
+    margin-bottom: 30px;
+    display: block;
+    
+
+}
+
+.hero-caption p{
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 36px;
+    display: block;
+    font-size: 24px;
+    padding-right: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+
+
+}
+
+.hero-caption button{
+    background: red;
+    font-family: "Chivo",sans-serif;
+    padding: 32px 58px;
+    color: white !important;
+    display: inline-block;
+    font-size: 18px!important;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.hero-image{
+  width: 56%;
+}
+ 
+.image{
+    width: 100%;
+  height: 100%;
+
+}
+
+/* CSS for ABOUT section */
+
+#About{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container{
+    width: 100%;
+    height: 560px;
+    margin-right: 0px;
+    margin-left: 18px;
+    padding-right: 28px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.about-caption{
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-single{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.about-caption .para {
+    color: #675e5e;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+    line-height: 1.1;
+    letter-spacing:1px;
+}
+
+.about-story p{
+    color: #675e5e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 0;
+    line-height: 1.1;
+    letter-spacing:1px;
+}
+
+.about-image{
+    width: 100%;
+    display: flex;
+
+}
+
+.about-image img{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.about-story{
+    padding:42px;
+
+}
+
+.about-story h2{
+    font-family: "Chivo",sans-serif;
+    font-size: 50px;
+    display: block;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.about-btn{
+    background: white;
+    font-family: "Chivo",sans-serif;
+    padding: 14px 32px;
+    color: red;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+    border: 2px solid red;
+    text-decoration: none;
+    margin: 30px 30px 30px 0;
+}
+
+
+
+/* CSS for SERVICE */
+#Service{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.barber-team{
+    width: 56%;
+}
+
+.team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-barber{
+    flex: 0 0 auto;
+    width: 33.3333333%;
+    display: block;
+    margin-bottom: -4px;
+}
+
+.single-barber img{
+    width: 100%;
+}
+
+.barber-details{
+    width: 41%;
+    padding: 20px 40px 20px 80px;
+}
+
+.table-section{
+    border-bottom: 1px solid #150303;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.table-section h2{
+    font-family: "Chivo",sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    position: relative;
+}
+.job-title h4{
+    font-size: 18px;
+    margin-bottom: 1px;
+    font-weight: 400;
+}
+
+.price-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0;
+    border-bottom: 1px solid #efdce4;
+}
+.price-left{
+    display: flex;
+    align-items: center;
+}
+
+.price p{
+    color: #3f4854;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.price p span{
+    color:red;
+    font-weight: 700;
+    font-family:"Chivo",sans-serif;
+    padding-left: 5px;
+}
+
+.Service-details{
+    margin-bottom: 10px ;
+    padding:120px 0;
+    position: relative;
+}
+
+.srevice-row{
+   align-items: row;
+   justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 2px 0 2px;
+   width: 100%;
+}
+
+.service-col{
+ width: 41%;
+ max-width: 100%;
+}
+
+.section-title{
+   margin-bottom: 50px;
+   position: relative;
+}
+.section-title h2{
+    font-family: "Chivo",sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+
+.table-caption{
+   margin-bottom: 40px;
+}
+
+
+.item-section{
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.header-btn1{
+    font-size: 20px;
+    display: block;
+    color: white;
+    background-color: #150303;
+    padding: 20px 10px 21px 34px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+    line-height: inherit;
+    border: none;
+    margin-bottom:20px;
+}
+
+.header-btn2{
+    font-size: 20px;
+    display: block;
+    color: white;
+    background-color:#fb0000;
+    padding: 20px 10px 21px 34px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+    line-height: inherit;
+    border: none;
+    margin-bottom:20px;
+}
+
+
+
+.header-btn1 span a{
+    color: white;
+    text-align: end;
+    padding-left: 70%;
+    font-size: 30px;
+}
+
+.header-btn2 span a{
+    color: white;
+    text-align: end;
+    padding-left: 70%;
+    font-size: 30px;
+}
+
+.col-image{
+    width: 53%;
+}
+.service-image{
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.servce-image img{
+    width: 100%;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* CSS for Gallery */
+
+#Gallery{
+ padding-top: 25px;
+  
+    background-image: url(https://preview.colorlib.com/theme/narosundar/assets/img/gallery/section-bg.jpg.webp);
+}
+
+.gallery-container{
+    width: 100%;
+    height: 550px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 11%;
+    padding-left: 11%;
+    display: flex;
+}
+
+.gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.gallery-col{
+   
+    flex: 0 0 auto;
+    width: 25%;
+    margin-left: 8.3333333333%;
+}
+
+.card{
+    background-color: #150303;
+    border-radius: 15px;
+    padding: 60px 40px;
+    margin-top: 25px;
+    text-align: center;
+    z-index: 1;
+    height: auto;
+    line-height: 1.5;
+    width: 93%;
+
+
+}
+
+.card h5{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 21px;
+    display: block;
+}
+
+.cut-icon{
+   /* position: absolute; */
+   padding: 2px;
+}
+
+.cut-cap{
+  color: #928888;
+}
+
+.gallery-image-item{
+    width: 100%;
+    
+
+}
+
+.gallery-items{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.items{
+    width: 20%;
+    display: block;
+}
+.items img{
+    width: 100%;
+}
+
+/* CSS for CUSTOMERS reviews */
+.customers-review{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.review-container{
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right:5%;
+    padding-left: 5%;
+    
+}
+
+.review-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 77px;
+  justify-content: center;
+}
+
+title.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: center;
+}
+.title-col{
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+    padding-right: 30%;
+    padding-left:30%;
+
+}
+
+.title-col h2{
+    font-family: "Chivo",sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+
+
+
+.single-caption1{
+    border-top: 1px solid rgba(103,94,94,.2);
+    border-bottom:1px solid rgba(103,94,94,.2) ;
+    padding: 40px 35px 25px 35px;
+    margin-bottom: 30px;
+    width: 33.333%;
+    height: 365px;
+
+}
+
+.single-caption2{
+    border: 1px solid rgba(103,94,94,.2);
+    /* border-bottom:1px solid rgba(103,94,94,.2) ; */
+    padding: 40px 35px 25px 35px;
+    margin-bottom: 30px;
+    width: 33.333%;
+    height: 365px;
+
+
+}
+
+.single-caption3{
+    border-top: 1px solid rgba(103,94,94,.2);
+    border-bottom:1px solid rgba(103,94,94,.2) ;
+    padding: 40px 35px 25px 35px;
+    margin-bottom: 30px;
+    width: 33.333%;
+    height: 365px;
+
+
+}
+.rating{
+    padding: 6px;
+    display: block;
+}
+
+
+
+.rating ul{
+    display: block;
+}
+
+
+.rating ul li{
+    list-style: none;
+    color: red;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+}
+.review-cap p{
+    color: #150303;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+
+
+.review-img{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  
+}
+
+.review-img img{
+    padding: 8px 0;
+}
+
+.review-img p{
+    color: #150303;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+/* CSS for footer */
+
+
+.footer-wraper{
+   background-color: #150303;
+   height: auto;
+   
+}
+.footer-container{
+    width: 100%;
+    height: auto;
+    padding: 0px 8%;
+}
+
+.footer-area{
+    padding-top: 99px;
+}
+.footer-row{
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+.footer-col1-3{
+  flex: 0 0 auto;
+  width: 20%;
+  line-height: 1.6;
+
+}
+.footer-col2{
+    flex: 0 0 auto;
+    width: 25%;
+    text-align: center;
+    line-height: 1.6;
+}
+.single-footer1-3{
+   margin-bottom: 50px;
+   color:white;
+}
+.single-footer2 p {
+    font-family: "Open Sans",sans-serif;
+    color: #675e5e;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+
+}
+
+.phone-icon i{
+    color: #fb0000;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+.single-footer1-3 h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.single-footer1-3 ul li{
+    margin-bottom: 5px;
+    color: #928888;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: underline transparent; 
+    list-style: none;
+} 
+.footer-logo{
+margin-bottom: 35px;
+}
+
+.social-icon{
+    padding-top: 30px;
+}
+
+.social-icon a{
+    
+    color: #fff;
+    background: rgba(255,255,255,.06);
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.social-icon a i{
+    border-radius: 50%;
+}
+
+.arrow-icon i{
+    color: #fb0000;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+}
+
+.footer-border{
+    
+        border-top: 1px solid rgba(255,255,255,.09);
+        padding-top: 39px;
+        padding-bottom: 1px
+}
+
+.footer-caption p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #928888;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+}
+
+.footer-bottom-row{
+    width: 100%;
+}
+.footer-bottom-col{
+  flex: 0 0 auto;
+  width: 100%;
+  display: block;
+}
+.footer-caption{
+    width: 100%;
+    text-align: left;
+}
+
+.footer-caption p a{
+    color: #fb0000;
+    text-decoration: none;
+}
+
+.fa-heart::before{
+    color: #fb0000;
+}
